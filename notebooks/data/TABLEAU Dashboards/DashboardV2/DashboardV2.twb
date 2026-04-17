@@ -1,0 +1,3147 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0226.1626                               -->
+<workbook original-version='18.1' source-build='2026.1.0 (20261.26.0226.1626)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <SpatialFileLayer />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='file_TABLEAU_V6(quartieri_standard).csv+ (Connessioni multiple)' inline='true' name='federated.1apsjxd0y96tfq1bg6zha0olzafc' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='file_TABLEAU_V6(quartieri_standard)' name='textscan.14rc72l04ihex91bqihdl1fv12eg'>
+            <connection class='textscan' directory='C:/Users/lorem/Desktop/torino-housing-predictor/notebooks/data/TABLEAU' filename='file_TABLEAU_V6(quartieri_standard).csv' password='' server='' />
+          </named-connection>
+          <named-connection caption='ex_neighborhood_boundary' name='ogrdirect.0jbhb5m1skt3sy1esj0l81of21w0'>
+            <connection class='ogrdirect' directory='C:/Users/lorem/Desktop/torino-housing-predictor/notebooks/tableauSData' filename='ex_neighborhood_boundary.shp' password='' server='' tablename='' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='textscan.14rc72l04ihex91bqihdl1fv12eg' name='file_TABLEAU_V6(quartieri_standard).csv' table='[file_TABLEAU_V6(quartieri_standard)#csv]' type='table'>
+            <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+              <column datatype='string' name='energy_class' ordinal='0' />
+              <column datatype='string' name='tipo_immobile' ordinal='1' />
+              <column datatype='string' name='via' ordinal='2' />
+              <column datatype='string' name='civico' ordinal='3' />
+              <column datatype='string' name='quartiere' ordinal='4' />
+              <column datatype='string' name='citta' ordinal='5' />
+              <column datatype='real' name='lat' ordinal='6' />
+              <column datatype='real' name='lon' ordinal='7' />
+              <column datatype='real' name='dist_metro_m' ordinal='8' />
+              <column datatype='real' name='minuti_metro' ordinal='9' />
+              <column datatype='real' name='dist_tram_m' ordinal='10' />
+              <column datatype='real' name='minuti_tram' ordinal='11' />
+              <column datatype='real' name='dist_bus_m' ordinal='12' />
+              <column datatype='real' name='minuti_bus' ordinal='13' />
+              <column datatype='integer' name='distanza_ospedale_m' ordinal='14' />
+              <column datatype='string' name='ospedale_piu_vicino' ordinal='15' />
+              <column datatype='real' name='tempo_piedi_ospedale_min' ordinal='16' />
+              <column datatype='integer' name='distanza_universita_m' ordinal='17' />
+              <column datatype='string' name='universita_piu_vicino' ordinal='18' />
+              <column datatype='real' name='tempo_piedi_universita_min' ordinal='19' />
+              <column datatype='integer' name='distanza_stazione_m' ordinal='20' />
+              <column datatype='integer' name='stazione_piu_vicino' ordinal='21' />
+              <column datatype='real' name='tempo_piedi_stazione_min' ordinal='22' />
+              <column datatype='integer' name='distanza_asilo_m' ordinal='23' />
+              <column datatype='string' name='asilo_piu_vicino' ordinal='24' />
+              <column datatype='real' name='tempo_piedi_asilo_min' ordinal='25' />
+              <column datatype='integer' name='distanza_scuola_elementare_m' ordinal='26' />
+              <column datatype='string' name='scuola_elementare_piu_vicino' ordinal='27' />
+              <column datatype='real' name='tempo_piedi_scuola_elementare_min' ordinal='28' />
+              <column datatype='integer' name='distanza_scuola_media_m' ordinal='29' />
+              <column datatype='string' name='scuola_media_piu_vicino' ordinal='30' />
+              <column datatype='real' name='tempo_piedi_scuola_media_min' ordinal='31' />
+              <column datatype='integer' name='distanza_scuola_superiore_m' ordinal='32' />
+              <column datatype='string' name='scuola_superiore_piu_vicino' ordinal='33' />
+              <column datatype='real' name='tempo_piedi_scuola_superiore_min' ordinal='34' />
+              <column datatype='date' name='data_aggiornamento' ordinal='35' />
+              <column datatype='real' name='numero_locali' ordinal='36' />
+              <column datatype='real' name='size_m2' ordinal='37' />
+              <column datatype='real' name='Bathrooms' ordinal='38' />
+              <column datatype='real' name='floor' ordinal='39' />
+              <column datatype='real' name='price' ordinal='40' />
+              <column datatype='real' name='Balcony' ordinal='41' />
+              <column datatype='real' name='coefficient' ordinal='42' />
+              <column datatype='real' name='elevator_final' ordinal='43' />
+              <column datatype='string' name='esposizione' ordinal='44' />
+              <column datatype='string' name='infissi_vetro' ordinal='45' />
+              <column datatype='string' name='infissi_materiale' ordinal='46' />
+              <column datatype='integer' name='luxury_score' ordinal='47' />
+              <column datatype='string' name='quartiere_pulito' ordinal='48' />
+            </columns>
+          </relation>
+          <relation connection='ogrdirect.0jbhb5m1skt3sy1esj0l81of21w0' name='ex_neighborhood_boundary.shp' table='[ex_neighborhood_boundary.shp]' type='table'>
+            <columns>
+              <column datatype='integer' name='ID_QUART' ordinal='0' />
+              <column datatype='string' name='DENOM' ordinal='1' />
+              <column datatype='spatial' name='Geometry' ordinal='2' />
+            </columns>
+          </relation>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;it&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;€&quot;</attribute>
+              <attribute datatype='string' name='decimal-char'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;;&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;it_IT&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+              <attribute datatype='string' name='thousands-char'>&quot;.&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>energy_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[energy_class]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>energy_class</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_immobile</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_immobile]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tipo_immobile</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>via</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[via]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>via</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>civico</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[civico]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>civico</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quartiere</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quartiere]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>quartiere</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>citta</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[citta]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>citta</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lat</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lat]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>lat</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lon</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[lon]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>lon</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dist_metro_m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dist_metro_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>dist_metro_m</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minuti_metro</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minuti_metro]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>minuti_metro</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dist_tram_m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dist_tram_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>dist_tram_m</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minuti_tram</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minuti_tram]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>minuti_tram</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dist_bus_m</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[dist_bus_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>dist_bus_m</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>minuti_bus</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[minuti_bus]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>minuti_bus</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_ospedale_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_ospedale_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_ospedale_m</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ospedale_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ospedale_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>ospedale_piu_vicino</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_ospedale_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_ospedale_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_ospedale_min</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_universita_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_universita_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_universita_m</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>universita_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[universita_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>universita_piu_vicino</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_universita_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_universita_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_universita_min</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_stazione_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_stazione_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_stazione_m</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>stazione_piu_vicino</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[stazione_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>stazione_piu_vicino</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_stazione_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_stazione_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_stazione_min</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_asilo_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_asilo_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_asilo_m</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>asilo_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[asilo_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>asilo_piu_vicino</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_asilo_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_asilo_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_asilo_min</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_scuola_elementare_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_scuola_elementare_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_scuola_elementare_m</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scuola_elementare_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scuola_elementare_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>scuola_elementare_piu_vicino</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_scuola_elementare_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_scuola_elementare_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_scuola_elementare_min</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_scuola_media_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_scuola_media_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_scuola_media_m</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scuola_media_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scuola_media_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>scuola_media_piu_vicino</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_scuola_media_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_scuola_media_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_scuola_media_min</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>distanza_scuola_superiore_m</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[distanza_scuola_superiore_m]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>distanza_scuola_superiore_m</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scuola_superiore_piu_vicino</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scuola_superiore_piu_vicino]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>scuola_superiore_piu_vicino</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tempo_piedi_scuola_superiore_min</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[tempo_piedi_scuola_superiore_min]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>tempo_piedi_scuola_superiore_min</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>data_aggiornamento</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[data_aggiornamento]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>data_aggiornamento</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>numero_locali</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[numero_locali]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>numero_locali</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>size_m2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[size_m2]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>size_m2</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bathrooms</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Bathrooms]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>Bathrooms</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>floor</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[floor]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>floor</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>price</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[price]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>price</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Balcony</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Balcony]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>Balcony</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coefficient</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coefficient]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>coefficient</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>elevator_final</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[elevator_final]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>elevator_final</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>esposizione</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[esposizione]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>esposizione</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>infissi_vetro</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[infissi_vetro]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>infissi_vetro</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>infissi_materiale</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[infissi_materiale]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>infissi_materiale</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>luxury_score</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[luxury_score]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>luxury_score</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quartiere_pulito</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quartiere_pulito]</local-name>
+            <parent-name>[file_TABLEAU_V6(quartieri_standard).csv]</parent-name>
+            <remote-alias>quartiere_pulito</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LIT_RIT' />
+            <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID_QUART</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID_QUART]</local-name>
+            <parent-name>[ex_neighborhood_boundary.shp]</parent-name>
+            <remote-alias>ID_QUART</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DENOM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DENOM]</local-name>
+            <parent-name>[ex_neighborhood_boundary.shp]</parent-name>
+            <remote-alias>DENOM</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='binary' />
+            <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Geometry</remote-name>
+            <remote-type>8</remote-type>
+            <local-name>[Geometry]</local-name>
+            <parent-name>[ex_neighborhood_boundary.shp]</parent-name>
+            <remote-alias>Geometry</remote-alias>
+            <ordinal>51</ordinal>
+            <caption>Geometria</caption>
+            <local-type>spatial</local-type>
+            <aggregation>Collect</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]&quot;' value='Prezzo' />
+          <alias key='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:size_m2:qk]&quot;' value='Metratura' />
+          <alias key='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[cnt:price:qk]&quot;' value='Immobili' />
+        </aliases>
+      </column>
+      <column caption='Above Avg Prices' datatype='boolean' name='[Calculation_1203751135019008]' role='measure' type='nominal'>
+        <calculation class='tableau' formula='AVG([price])&gt;=WINDOW_AVG(AVG([price]))'>
+          <table-calc ordering-type='Rows' />
+        </calculation>
+      </column>
+      <column caption='Denom' datatype='string' name='[DENOM]' role='dimension' type='nominal' />
+      <column caption='Geometria' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+      <column caption='Id Quart' datatype='integer' name='[ID_QUART]' role='dimension' type='ordinal' />
+      <column caption='Size M2 (contenitore)' datatype='integer' name='[Size M2 (contenitore)]' role='dimension' type='ordinal'>
+        <calculation class='bin' decimals='1' formula='[size_m2]' peg='0' size='24' />
+      </column>
+      <column caption='ex_neighborhood_boundary.shp' datatype='table' name='[__tableau_internal_object_id__].[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]' role='measure' type='quantitative' />
+      <column caption='file_TABLEAU_V6(quartieri_standard).csv' datatype='table' name='[__tableau_internal_object_id__].[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]' role='measure' type='quantitative' />
+      <column caption='Asilo Piu Vicino' datatype='string' name='[asilo_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Citta' datatype='string' name='[citta]' role='dimension' semantic-role='[City].[Name]' type='nominal' />
+      <column caption='Civico' datatype='string' name='[civico]' role='dimension' type='nominal' />
+      <column caption='Coefficient' datatype='real' name='[coefficient]' role='measure' type='quantitative' />
+      <column caption='Data Aggiornamento' datatype='date' name='[data_aggiornamento]' role='dimension' type='ordinal' />
+      <column caption='Dist Bus M' datatype='real' name='[dist_bus_m]' role='measure' type='quantitative' />
+      <column caption='Dist Metro M' datatype='real' name='[dist_metro_m]' role='measure' type='quantitative' />
+      <column caption='Dist Tram M' datatype='real' name='[dist_tram_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Asilo M' datatype='integer' name='[distanza_asilo_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Ospedale M' datatype='integer' name='[distanza_ospedale_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Scuola Elementare M' datatype='integer' name='[distanza_scuola_elementare_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Scuola Media M' datatype='integer' name='[distanza_scuola_media_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Scuola Superiore M' datatype='integer' name='[distanza_scuola_superiore_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Stazione M' datatype='integer' name='[distanza_stazione_m]' role='measure' type='quantitative' />
+      <column caption='Distanza Universita M' datatype='integer' name='[distanza_universita_m]' role='measure' type='quantitative' />
+      <column caption='Elevator Final' datatype='real' name='[elevator_final]' role='measure' type='quantitative' />
+      <column caption='Energy Class' datatype='string' name='[energy_class]' role='dimension' type='nominal' />
+      <column caption='Esposizione' datatype='string' name='[esposizione]' role='dimension' type='nominal' />
+      <column caption='Floor' datatype='real' name='[floor]' role='measure' type='quantitative' />
+      <column caption='Infissi Materiale' datatype='string' name='[infissi_materiale]' role='dimension' type='nominal' />
+      <column caption='Infissi Vetro' datatype='string' name='[infissi_vetro]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Lat' datatype='real' name='[lat]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Lon' datatype='real' name='[lon]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Luxury Score' datatype='integer' name='[luxury_score]' role='measure' type='quantitative' />
+      <column caption='Minuti Bus' datatype='real' name='[minuti_bus]' role='measure' type='quantitative' />
+      <column caption='Minuti Metro' datatype='real' name='[minuti_metro]' role='measure' type='quantitative' />
+      <column caption='Minuti Tram' datatype='real' name='[minuti_tram]' role='measure' type='quantitative' />
+      <column caption='Numero Locali' datatype='real' name='[numero_locali]' role='measure' type='quantitative' />
+      <column caption='Ospedale Piu Vicino' datatype='string' name='[ospedale_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+      <column caption='Quartiere' datatype='string' name='[quartiere]' role='dimension' type='nominal' />
+      <column caption='Quartiere Pulito' datatype='string' name='[quartiere_pulito]' role='dimension' type='nominal' />
+      <column caption='Scuola Elementare Piu Vicino' datatype='string' name='[scuola_elementare_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Scuola Media Piu Vicino' datatype='string' name='[scuola_media_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Scuola Superiore Piu Vicino' datatype='string' name='[scuola_superiore_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Size M2' datatype='real' name='[size_m2]' role='measure' type='quantitative' />
+      <column caption='Stazione Piu Vicino' datatype='integer' name='[stazione_piu_vicino]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Asilo Min' datatype='real' name='[tempo_piedi_asilo_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Ospedale Min' datatype='real' name='[tempo_piedi_ospedale_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Scuola Elementare Min' datatype='real' name='[tempo_piedi_scuola_elementare_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Scuola Media Min' datatype='real' name='[tempo_piedi_scuola_media_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Scuola Superiore Min' datatype='real' name='[tempo_piedi_scuola_superiore_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Stazione Min' datatype='real' name='[tempo_piedi_stazione_min]' role='measure' type='quantitative' />
+      <column caption='Tempo Piedi Universita Min' datatype='real' name='[tempo_piedi_universita_min]' role='measure' type='quantitative' />
+      <column caption='Tipo Immobile' datatype='string' name='[tipo_immobile]' role='dimension' type='nominal' />
+      <column caption='Universita Piu Vicino' datatype='string' name='[universita_piu_vicino]' role='dimension' type='nominal' />
+      <column caption='Via' datatype='string' name='[via]' role='dimension' type='nominal' />
+      <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[size_m2]' derivation='Avg' name='[avg:size_m2:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[price]' derivation='Count' name='[cnt:price:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_1203751135019008]' derivation='User' name='[usr:Calculation_1203751135019008:nk:1]' pivot='key' type='nominal'>
+        <table-calc ordering-type='Columns' />
+      </column-instance>
+      <group caption='Azione (Blank)' hidden='true' name='[Action (Blank)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Calculation_1203751149502467]' />
+        </groupfilter>
+      </group>
+      <group caption='Azione (Denom)' hidden='true' name='[Action (Denom)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[DENOM]' />
+        </groupfilter>
+      </group>
+      <group caption='Azione (Size M2 (contenitore))' hidden='true' name='[Action (Size M2 (contenitore))]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Size M2 (contenitore)]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='it_IT' class='hyper' dbname='C:/Users/lorem/AppData/Local/Temp/TableauTemp/#TableauTemp_15d8y020onzpsc1dub7gi1oljqz1.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='04/17/2026 04:23:43 PM' username='tableau_internal_user'>
+          <relation type='collection'>
+            <relation name='file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A' table='[Extract].[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]' type='table' />
+            <relation name='ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015' table='[Extract].[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]' type='table' />
+          </relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>energy_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[energy_class]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>energy_class</remote-alias>
+              <ordinal>0</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_immobile</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_immobile]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tipo_immobile</remote-alias>
+              <ordinal>1</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>via</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[via]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>via</remote-alias>
+              <ordinal>2</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>658</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>civico</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[civico]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>civico</remote-alias>
+              <ordinal>3</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>255</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quartiere</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quartiere]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>quartiere</remote-alias>
+              <ordinal>4</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>citta</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[citta]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>citta</remote-alias>
+              <ordinal>5</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lat</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lat]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>lat</remote-alias>
+              <ordinal>6</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>999</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lon</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[lon]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>lon</remote-alias>
+              <ordinal>7</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>999</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dist_metro_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dist_metro_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>dist_metro_m</remote-alias>
+              <ordinal>8</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>988</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minuti_metro</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[minuti_metro]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>minuti_metro</remote-alias>
+              <ordinal>9</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>463</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dist_tram_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dist_tram_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>dist_tram_m</remote-alias>
+              <ordinal>10</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>938</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minuti_tram</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[minuti_tram]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>minuti_tram</remote-alias>
+              <ordinal>11</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>231</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dist_bus_m</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[dist_bus_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>dist_bus_m</remote-alias>
+              <ordinal>12</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>798</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>minuti_bus</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[minuti_bus]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>minuti_bus</remote-alias>
+              <ordinal>13</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>48</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_ospedale_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_ospedale_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_ospedale_m</remote-alias>
+              <ordinal>14</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>819</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ospedale_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ospedale_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>ospedale_piu_vicino</remote-alias>
+              <ordinal>15</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_ospedale_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_ospedale_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_ospedale_min</remote-alias>
+              <ordinal>16</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>343</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_universita_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_universita_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_universita_m</remote-alias>
+              <ordinal>17</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>799</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>universita_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[universita_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>universita_piu_vicino</remote-alias>
+              <ordinal>18</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_universita_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_universita_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_universita_min</remote-alias>
+              <ordinal>19</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>348</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_stazione_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_stazione_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_stazione_m</remote-alias>
+              <ordinal>20</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>824</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>stazione_piu_vicino</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[stazione_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>stazione_piu_vicino</remote-alias>
+              <ordinal>21</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_stazione_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_stazione_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_stazione_min</remote-alias>
+              <ordinal>22</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>388</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_asilo_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_asilo_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_asilo_m</remote-alias>
+              <ordinal>23</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>449</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>asilo_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[asilo_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>asilo_piu_vicino</remote-alias>
+              <ordinal>24</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>163</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_asilo_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_asilo_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_asilo_min</remote-alias>
+              <ordinal>25</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_scuola_elementare_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_scuola_elementare_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_scuola_elementare_m</remote-alias>
+              <ordinal>26</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>478</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scuola_elementare_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scuola_elementare_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>scuola_elementare_piu_vicino</remote-alias>
+              <ordinal>27</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>131</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_scuola_elementare_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_scuola_elementare_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_scuola_elementare_min</remote-alias>
+              <ordinal>28</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>113</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_scuola_media_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_scuola_media_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_scuola_media_m</remote-alias>
+              <ordinal>29</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>613</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scuola_media_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scuola_media_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>scuola_media_piu_vicino</remote-alias>
+              <ordinal>30</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_scuola_media_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_scuola_media_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_scuola_media_min</remote-alias>
+              <ordinal>31</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>171</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>distanza_scuola_superiore_m</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[distanza_scuola_superiore_m]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>distanza_scuola_superiore_m</remote-alias>
+              <ordinal>32</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>684</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scuola_superiore_piu_vicino</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scuola_superiore_piu_vicino]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>scuola_superiore_piu_vicino</remote-alias>
+              <ordinal>33</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>46</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tempo_piedi_scuola_superiore_min</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[tempo_piedi_scuola_superiore_min]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>tempo_piedi_scuola_superiore_min</remote-alias>
+              <ordinal>34</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>226</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>data_aggiornamento</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[data_aggiornamento]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>data_aggiornamento</remote-alias>
+              <ordinal>35</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>numero_locali</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[numero_locali]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>numero_locali</remote-alias>
+              <ordinal>36</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>size_m2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[size_m2]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>size_m2</remote-alias>
+              <ordinal>37</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>170</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Bathrooms</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Bathrooms]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>Bathrooms</remote-alias>
+              <ordinal>38</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>floor</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[floor]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>floor</remote-alias>
+              <ordinal>39</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>price</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[price]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>price</remote-alias>
+              <ordinal>40</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>294</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Balcony</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Balcony]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>Balcony</remote-alias>
+              <ordinal>41</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coefficient</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coefficient]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>coefficient</remote-alias>
+              <ordinal>42</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>elevator_final</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[elevator_final]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>elevator_final</remote-alias>
+              <ordinal>43</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>esposizione</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[esposizione]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>esposizione</remote-alias>
+              <ordinal>44</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>infissi_vetro</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[infissi_vetro]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>infissi_vetro</remote-alias>
+              <ordinal>45</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>infissi_materiale</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[infissi_materiale]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>infissi_materiale</remote-alias>
+              <ordinal>46</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>luxury_score</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[luxury_score]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>luxury_score</remote-alias>
+              <ordinal>47</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>6</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quartiere_pulito</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quartiere_pulito]</local-name>
+              <parent-name>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</parent-name>
+              <remote-alias>quartiere_pulito</remote-alias>
+              <ordinal>48</ordinal>
+              <family>file_TABLEAU_V6(quartieri_standard).csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LIT_RIT' />
+              <object-id>[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ID_QUART</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ID_QUART]</local-name>
+              <parent-name>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</parent-name>
+              <remote-alias>ID_QUART</remote-alias>
+              <ordinal>49</ordinal>
+              <family>ex_neighborhood_boundary.shp</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>DENOM</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[DENOM]</local-name>
+              <parent-name>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</parent-name>
+              <remote-alias>DENOM</remote-alias>
+              <ordinal>50</ordinal>
+              <family>ex_neighborhood_boundary.shp</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='binary' />
+              <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Geometry</remote-name>
+              <remote-type>128</remote-type>
+              <local-name>[Geometry]</local-name>
+              <parent-name>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</parent-name>
+              <remote-alias>Geometry</remote-alias>
+              <ordinal>51</ordinal>
+              <family>ex_neighborhood_boundary.shp</family>
+              <local-type>spatial</local-type>
+              <aggregation>Collect</aggregation>
+              <approx-count>23</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[price]' palette='red_10_0' type='interpolated' />
+          <encoding attr='color' field='[usr:Calculation_1203751135019008:nk:1]' type='palette'>
+            <map to='#da323f'>
+              <bucket>true</bucket>
+            </map>
+            <map to='#ffbeb2'>
+              <bucket>false</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;IT&quot;' />
+      </semantic-values>
+      <date-options start-of-week='monday' />
+      <object-graph>
+        <objects>
+          <object caption='ex_neighborhood_boundary.shp' id='ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015'>
+            <properties context=''>
+              <relation connection='ogrdirect.0jbhb5m1skt3sy1esj0l81of21w0' name='ex_neighborhood_boundary.shp' table='[ex_neighborhood_boundary.shp]' type='table'>
+                <columns>
+                  <column datatype='integer' name='ID_QUART' ordinal='0' />
+                  <column datatype='string' name='DENOM' ordinal='1' />
+                  <column datatype='spatial' name='Geometry' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015' table='[Extract].[ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015]' type='table' />
+            </properties>
+          </object>
+          <object caption='file_TABLEAU_V6(quartieri_standard).csv' id='file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A'>
+            <properties context=''>
+              <relation connection='textscan.14rc72l04ihex91bqihdl1fv12eg' name='file_TABLEAU_V6(quartieri_standard).csv' table='[file_TABLEAU_V6(quartieri_standard)#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='it_IT' separator=';'>
+                  <column datatype='string' name='energy_class' ordinal='0' />
+                  <column datatype='string' name='tipo_immobile' ordinal='1' />
+                  <column datatype='string' name='via' ordinal='2' />
+                  <column datatype='string' name='civico' ordinal='3' />
+                  <column datatype='string' name='quartiere' ordinal='4' />
+                  <column datatype='string' name='citta' ordinal='5' />
+                  <column datatype='real' name='lat' ordinal='6' />
+                  <column datatype='real' name='lon' ordinal='7' />
+                  <column datatype='real' name='dist_metro_m' ordinal='8' />
+                  <column datatype='real' name='minuti_metro' ordinal='9' />
+                  <column datatype='real' name='dist_tram_m' ordinal='10' />
+                  <column datatype='real' name='minuti_tram' ordinal='11' />
+                  <column datatype='real' name='dist_bus_m' ordinal='12' />
+                  <column datatype='real' name='minuti_bus' ordinal='13' />
+                  <column datatype='integer' name='distanza_ospedale_m' ordinal='14' />
+                  <column datatype='string' name='ospedale_piu_vicino' ordinal='15' />
+                  <column datatype='real' name='tempo_piedi_ospedale_min' ordinal='16' />
+                  <column datatype='integer' name='distanza_universita_m' ordinal='17' />
+                  <column datatype='string' name='universita_piu_vicino' ordinal='18' />
+                  <column datatype='real' name='tempo_piedi_universita_min' ordinal='19' />
+                  <column datatype='integer' name='distanza_stazione_m' ordinal='20' />
+                  <column datatype='integer' name='stazione_piu_vicino' ordinal='21' />
+                  <column datatype='real' name='tempo_piedi_stazione_min' ordinal='22' />
+                  <column datatype='integer' name='distanza_asilo_m' ordinal='23' />
+                  <column datatype='string' name='asilo_piu_vicino' ordinal='24' />
+                  <column datatype='real' name='tempo_piedi_asilo_min' ordinal='25' />
+                  <column datatype='integer' name='distanza_scuola_elementare_m' ordinal='26' />
+                  <column datatype='string' name='scuola_elementare_piu_vicino' ordinal='27' />
+                  <column datatype='real' name='tempo_piedi_scuola_elementare_min' ordinal='28' />
+                  <column datatype='integer' name='distanza_scuola_media_m' ordinal='29' />
+                  <column datatype='string' name='scuola_media_piu_vicino' ordinal='30' />
+                  <column datatype='real' name='tempo_piedi_scuola_media_min' ordinal='31' />
+                  <column datatype='integer' name='distanza_scuola_superiore_m' ordinal='32' />
+                  <column datatype='string' name='scuola_superiore_piu_vicino' ordinal='33' />
+                  <column datatype='real' name='tempo_piedi_scuola_superiore_min' ordinal='34' />
+                  <column datatype='date' name='data_aggiornamento' ordinal='35' />
+                  <column datatype='real' name='numero_locali' ordinal='36' />
+                  <column datatype='real' name='size_m2' ordinal='37' />
+                  <column datatype='real' name='Bathrooms' ordinal='38' />
+                  <column datatype='real' name='floor' ordinal='39' />
+                  <column datatype='real' name='price' ordinal='40' />
+                  <column datatype='real' name='Balcony' ordinal='41' />
+                  <column datatype='real' name='coefficient' ordinal='42' />
+                  <column datatype='real' name='elevator_final' ordinal='43' />
+                  <column datatype='string' name='esposizione' ordinal='44' />
+                  <column datatype='string' name='infissi_vetro' ordinal='45' />
+                  <column datatype='string' name='infissi_materiale' ordinal='46' />
+                  <column datatype='integer' name='luxury_score' ordinal='47' />
+                  <column datatype='string' name='quartiere_pulito' ordinal='48' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A' table='[Extract].[file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[quartiere_pulito]' />
+              <expression op='[DENOM]' />
+            </expression>
+            <first-end-point object-id='file_TABLEAU_V6(quartieri_standard).csv_7EE0E6199F634A0A96C85FF41A5B0B5A' />
+            <second-end-point object-id='ex_neighborhood_boundary.shp_F3EF54256A45475CA8EE2685EB1A9015' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filtra 1 (generato)' name='[Action1_30829C849ABE47B7A103D5A7658D4724]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Prezzi Immobiliare Torino' type='sheet' worksheet='Prezzi per metratura' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Prezzi Immobiliare Torino' />
+      </command>
+    </action>
+    <action caption='Filtra 2 (generato)' name='[Action2_73EEC4B56EBD421F8B37E2659C4AF923]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Prezzi Immobiliare Torino' type='sheet' worksheet='Perzzi per tipo immobile' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Prezzi Immobiliare Torino' />
+      </command>
+    </action>
+    <action caption='Filtra 3 (generato)' name='[Action3_C005B77076534DF7AF71965ABA9B8DFF]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Prezzi Immobiliare Torino' type='sheet' worksheet='Prezzo per quartiere' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Prezzi Immobiliare Torino' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='KPIs Medi'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='file_TABLEAU_V6(quartieri_standard).csv+ (Connessioni multiple)' name='federated.1apsjxd0y96tfq1bg6zha0olzafc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1apsjxd0y96tfq1bg6zha0olzafc'>
+            <column caption='Denom' datatype='string' name='[DENOM]' role='dimension' type='nominal' />
+            <column caption='Size M2 (contenitore)' datatype='integer' name='[Size M2 (contenitore)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[size_m2]' peg='0' size='24' />
+            </column>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[size_m2]' derivation='Avg' name='[avg:size_m2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[price]' derivation='Count' name='[cnt:price:qk]' pivot='key' type='quantitative' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Size M2' datatype='real' name='[size_m2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[cnt:price:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:size_m2:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <manual-sort column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[cnt:price:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:size_m2:qk]&quot;</bucket>
+              <bucket>&quot;[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]'>
+            <groupfilter function='level-members' level='[DENOM]' user:ui-action-filter='[Action3_C005B77076534DF7AF71965ABA9B8DFF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]'>
+            <groupfilter function='level-members' level='[Size M2 (contenitore)]' user:ui-action-filter='[Action1_30829C849ABE47B7A103D5A7658D4724]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]</column>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]</column>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='height' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]' value='56' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='font-size' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]' value='14' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Multiple Values]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run fontsize='22'>&lt;</run>
+                <run fontsize='22'>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Multiple Values]</run>
+                <run fontsize='22'>&gt;</run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='cell'>
+                <format attr='text-align' value='center' />
+                <format attr='vertical-align' value='center' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid='{9BA7832F-0E08-4E33-8553-D92C12284F5E}' />
+    </worksheet>
+    <worksheet name='Perzzi per tipo immobile'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='file_TABLEAU_V6(quartieri_standard).csv+ (Connessioni multiple)' name='federated.1apsjxd0y96tfq1bg6zha0olzafc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1apsjxd0y96tfq1bg6zha0olzafc'>
+            <column caption='Above Avg Prices' datatype='boolean' name='[Calculation_1203751135019008]' role='measure' type='nominal'>
+              <calculation class='tableau' formula='AVG([price])&gt;=WINDOW_AVG(AVG([price]))'>
+                <table-calc ordering-type='Rows' />
+              </calculation>
+            </column>
+            <column caption='Denom' datatype='string' name='[DENOM]' role='dimension' type='nominal' />
+            <column caption='Size M2 (contenitore)' datatype='integer' name='[Size M2 (contenitore)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[size_m2]' peg='0' size='24' />
+            </column>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[tipo_immobile]' derivation='None' name='[none:tipo_immobile:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Size M2' datatype='real' name='[size_m2]' role='measure' type='quantitative' />
+            <column caption='Tipo Immobile' datatype='string' name='[tipo_immobile]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1203751135019008]' derivation='User' name='[usr:Calculation_1203751135019008:nk:1]' pivot='key' type='nominal'>
+              <table-calc ordering-type='Columns' />
+            </column-instance>
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]'>
+            <groupfilter function='level-members' level='[DENOM]' user:ui-action-filter='[Action3_C005B77076534DF7AF71965ABA9B8DFF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]'>
+            <groupfilter function='level-members' level='[Size M2 (contenitore)]' user:ui-action-filter='[Action1_30829C849ABE47B7A103D5A7658D4724]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:tipo_immobile:nk]'>
+            <groupfilter count='8' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([price])' function='order' user:ui-marker='order'>
+                <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Appartamento&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Appartamento in villa&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Attico&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Bilocale&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Casale&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Cascina&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Loft&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Mansarda&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Monolocale&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Palazzo - Edificio&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Quadrilocale&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Terratetto unifamiliare&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Trilocale&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Villa a schiera&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Villa bifamiliare&quot;' />
+                  <groupfilter function='member' level='[none:tipo_immobile:nk]' member='&quot;Villa unifamiliare&quot;' />
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:tipo_immobile:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:tipo_immobile:nk]</column>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]</column>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[usr:Calculation_1203751135019008:nk:1]' />
+            </encodings>
+            <reference-line axis-column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' enable-instant-analytics='true' formula='average' id='refline0' label-type='automatic' probability='95' scope='per-table' value-column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' z-order='1' />
+          </pane>
+        </panes>
+        <rows>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:tipo_immobile:nk]</rows>
+        <cols>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]</cols>
+      </table>
+      <simple-id uuid='{4DA7F734-42AE-4D6C-91CF-C913518A06E5}' />
+    </worksheet>
+    <worksheet name='Prezzi per metratura'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='file_TABLEAU_V6(quartieri_standard).csv+ (Connessioni multiple)' name='federated.1apsjxd0y96tfq1bg6zha0olzafc' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1apsjxd0y96tfq1bg6zha0olzafc'>
+            <column caption='Denom' datatype='string' name='[DENOM]' role='dimension' type='nominal' />
+            <column caption='Size M2 (contenitore)' datatype='integer' name='[Size M2 (contenitore)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[size_m2]' peg='0' size='24' />
+            </column>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[size_m2]' derivation='Max' name='[max:size_m2:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Size M2 (contenitore)]' derivation='None' name='[none:Size M2 (contenitore):ok]' pivot='key' type='ordinal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Size M2' datatype='real' name='[size_m2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]'>
+            <groupfilter function='level-members' level='[DENOM]' user:ui-action-filter='[Action3_C005B77076534DF7AF71965ABA9B8DFF]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='quantitative' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[max:size_m2:qk]' included-values='in-range'>
+            <min>23.0</min>
+            <max>398.0</max>
+          </filter>
+          <slices>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[max:size_m2:qk]</column>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Denom)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' field-type='quantitative' fold='true' scope='rows' synchronized='true' type='space' />
+            <format attr='title' class='0' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' scope='rows' value='' />
+            <format attr='title' class='1' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' scope='rows' value='' />
+            <format attr='display' class='1' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' scope='rows' value='false' />
+            <format attr='line-visibility' value='on' />
+            <format attr='line-pattern-only' value='solid' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' value='c#,##0,K&quot; €&quot;;-#,##0,K&quot; €&quot;' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='line-pattern-only' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ffffff' />
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#e15759' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk] + [federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk])</rows>
+        <cols>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:Size M2 (contenitore):ok]</cols>
+        <show-full-range>
+          <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Size M2 (contenitore)]</column>
+        </show-full-range>
+      </table>
+      <simple-id uuid='{7B41B936-CB22-41B2-9681-B11F540792E2}' />
+    </worksheet>
+    <worksheet name='Prezzo per quartiere'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='file_TABLEAU_V6(quartieri_standard).csv+ (Connessioni multiple)' name='federated.1apsjxd0y96tfq1bg6zha0olzafc' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1apsjxd0y96tfq1bg6zha0olzafc'>
+            <column caption='Denom' datatype='string' name='[DENOM]' role='dimension' type='nominal' />
+            <column caption='Geometria' datatype='spatial' name='[Geometry]' role='measure' type='nominal' />
+            <column caption='Size M2 (contenitore)' datatype='integer' name='[Size M2 (contenitore)]' role='dimension' type='ordinal'>
+              <calculation class='bin' decimals='1' formula='[size_m2]' peg='0' size='24' />
+            </column>
+            <column-instance column='[price]' derivation='Avg' name='[avg:price:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Geometry]' derivation='Collect' name='[clct:Geometry:nk]' pivot='key' type='nominal' />
+            <column-instance column='[DENOM]' derivation='None' name='[none:DENOM:nk]' pivot='key' type='nominal' />
+            <column caption='Price' datatype='real' name='[price]' role='measure' type='quantitative' />
+            <column caption='Size M2' datatype='real' name='[size_m2]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]'>
+            <groupfilter function='level-members' level='[Size M2 (contenitore)]' user:ui-action-filter='[Action1_30829C849ABE47B7A103D5A7658D4724]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Action (Size M2 (contenitore))]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='show-null-value-warning' value='false' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' />
+              <lod column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[clct:Geometry:nk]' />
+              <lod column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:DENOM:nk]' />
+              <geometry column='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[clct:Geometry:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='true' />
+                <format attr='stroke-color' value='#ffffff' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Latitude (generated)]</rows>
+        <cols>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{8B9D8DC0-F7FC-4AF1-91B6-37060098990C}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Prezzi Immobiliare Torino'>
+      <style>
+        <style-rule element='table'>
+          <format attr='background-color' value='#f5f5f5' />
+        </style-rule>
+      </style>
+      <size maxheight='600' maxwidth='1200' minheight='600' minwidth='1200' sizing-mode='range' />
+      <zones>
+        <zone h='100000' id='8' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97334' id='19' param='horz' type-v2='layout-flow' w='98666' x='667' y='1333'>
+            <zone h='97334' id='12' param='horz' type-v2='layout-flow' w='98666' x='667' y='1333'>
+              <zone h='97334' id='7' param='horz' type-v2='layout-flow' w='98666' x='667' y='1333'>
+                <zone h='97334' id='13' param='vert' type-v2='layout-flow' w='66414' x='667' y='1333'>
+                  <zone fixed-size='77' h='16166' id='9' is-fixed='true' type-v2='text' w='66414' x='667' y='1333'>
+                    <formatted-text>
+                      <run bold='true' fontcolor='#000000' fontsize='24'>Prezzi immobiliare Torino</run>
+                    </formatted-text>
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='10' />
+                      <format attr='padding' value='10' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='132' h='25333' id='14' is-fixed='true' name='KPIs Medi' show-title='false' w='66414' x='667' y='17499'>
+                    <layout-cache type-h='cell' type-w='cell' />
+                    <zone-style>
+                      <format attr='border-color' value='#e6e6e6' />
+                      <format attr='border-style' value='solid' />
+                      <format attr='border-width' value='1' />
+                      <format attr='margin' value='10' />
+                      <format attr='padding' value='10' />
+                      <format attr='background-color' value='#ffffff' />
+                    </zone-style>
+                  </zone>
+                  <zone h='55833' id='15' param='horz' type-v2='layout-flow' w='66414' x='667' y='42832'>
+                    <zone h='55833' id='16' name='Prezzi per metratura' w='32065' x='667' y='42832'>
+                      <layout-cache cell-count-w='16' minheight='194' non-cell-size-w='82' type-h='scalable' type-w='cell' />
+                      <zone-style>
+                        <format attr='border-color' value='#e6e6e6' />
+                        <format attr='border-style' value='solid' />
+                        <format attr='border-width' value='1' />
+                        <format attr='margin' value='10' />
+                        <format attr='padding' value='10' />
+                        <format attr='background-color' value='#ffffff' />
+                      </zone-style>
+                    </zone>
+                    <zone fixed-size='392' h='55833' id='17' is-fixed='true' name='Perzzi per tipo immobile' w='34334' x='32732' y='42832'>
+                      <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                      <zone-style>
+                        <format attr='border-color' value='#000000' />
+                        <format attr='border-style' value='none' />
+                        <format attr='border-width' value='0' />
+                        <format attr='margin' value='10' />
+                        <format attr='padding' value='10' />
+                      </zone-style>
+                    </zone>
+                  </zone>
+                </zone>
+                <zone fixed-size='367' h='97334' id='10' is-fixed='true' name='Prezzo per quartiere' w='32250' x='67081' y='1333'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='10' />
+                    <format attr='padding' value='10' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='42' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97334' id='41' param='vert' type-v2='layout-flow' w='98666' x='667' y='1333'>
+                <zone fixed-size='77' h='16166' id='9' type-v2='text' w='66414' x='667' y='1333'>
+                  <formatted-text>
+                    <run bold='true' fontcolor='#000000' fontsize='24'>Prezzi immobiliare Torino</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='97334' id='10' is-fixed='true' name='Prezzo per quartiere' w='32250' x='67081' y='1333'>
+                  <layout-cache minwidth='200' type-h='fixed' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='110' h='25333' id='14' is-fixed='true' name='KPIs Medi' show-title='false' w='66414' x='667' y='17499'>
+                  <layout-cache type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55833' id='16' is-fixed='true' name='Prezzi per metratura' w='32065' x='667' y='42832'>
+                  <layout-cache cell-count-w='16' minheight='194' non-cell-size-w='82' type-h='scalable' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#e6e6e6' />
+                    <format attr='border-style' value='solid' />
+                    <format attr='border-width' value='1' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                    <format attr='background-color' value='#ffffff' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='55833' id='17' is-fixed='true' name='Perzzi per tipo immobile' w='34334' x='32732' y='42832'>
+                  <layout-cache minwidth='260' type-h='cell' type-w='scalable' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{957F5098-B594-4B61-909A-0E7AC18CC8F3}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='KPIs Medi'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A2EDB770-90AA-48BA-B578-4E741B90803D}' />
+    </window>
+    <window class='worksheet' name='Prezzo per quartiere'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[avg:price:qk]</field>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:DENOM:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C4C0F7DE-9812-4F63-9AD4-1A69FCAAD79A}' />
+    </window>
+    <window class='worksheet' name='Prezzi per metratura'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:Size M2 (contenitore):ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{12657C5A-BF12-49EF-BCE7-C6E7B65FC86E}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Perzzi per tipo immobile'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='170'>
+            <card pane-specification-id='0' param='[federated.1apsjxd0y96tfq1bg6zha0olzafc].[usr:Calculation_1203751135019008:nk:1]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[none:tipo_immobile:nk]</field>
+            <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[usr:Calculation_1203751135019008:nk:1]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A5960BEA-7743-433C-8A05-90C591BACB77}' />
+    </window>
+    <window class='dashboard' name='Prezzi Immobiliare Torino'>
+      <viewpoints>
+        <viewpoint name='KPIs Medi'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Perzzi per tipo immobile'>
+          <zoom type='entire-view' />
+          <highlight>
+            <color-one-way>
+              <field>[federated.1apsjxd0y96tfq1bg6zha0olzafc].[usr:Calculation_1203751135019008:nk:1]</field>
+            </color-one-way>
+          </highlight>
+        </viewpoint>
+        <viewpoint name='Prezzi per metratura'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Prezzo per quartiere'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{5B1C06E6-0BD6-48F6-AADF-2C3C96B15ACA}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='121' name='KPIs Medi' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAAB5CAYAAABvGS66AAAACXBIWXMAABYlAAAWJQFJUiTw
+      AAAR+klEQVR4nO3deVRTd97H8XcDEWKUAiIWRQfcpYjWBYW6D4+P4tK61WmtC1NFO622HZWh
+      ra1brU7bRw/VOqjHDjpSV+Tp9MGl0opLKcdaVFwqgssgIkUWiUpCCPH5I3AVSZAAGuD+Xud4
+      zgV+ud8f8vvk/u7v3iTP3L9//z6CIFMKW3dAEGxJBECQNREAQdZEAARZEwEQZE0EQJA1EQBB
+      1kQABFkTARBkTQRAkDURAEHWRAAEWRMBEGRNBECQNREAQdZEAARZEwEQZE0EQJA1EQBB1kQA
+      BFkTARBkTQRAkDURAEHWRAAEWRMBEGTN3tYdEOraURb3+StxAKNWc3LpIOt3kXOO+JRs03az
+      DgT090b9aJXFffirqQirTy6lYpV7XE36mct3TV895xeEr7v13XgaGlAAbrDnnTfZehVgKB/+
+      +z362bpLjdXF3YSHx5m2u8wlxkwAqpbL0bXhrE01fTVq9UkRgNozcC83i6wsgNsU27o7QqPQ
+      gAIgPDVdJ7Fq1UDTdrMOuFm9AzcGzV1Fm/IpUNc67FsdEwEQKnP3JSjItxY7UOPdPwjvOuvQ
+      kyMC0AAYigq4XVQKTZxwc2pi6+40Ko0qAHk/bSIyIQdwZ8icWfRTXeXwhs/ZvP8s6flaAFSu
+      fgSHr2DhMA/sAf31Y2zf9E+iD6dgaqLC1S+Y8BULGebx6H9PHj9tisRUYghzZvVDdfUwGz7f
+      zP6z6RYer+f6se1s+mc0h1PyMTVxxS84nBULh1GpRDlDPhf3b+CztftIKeu76RfwxH/8W7z/
+      1n/RtjpZMBRx9fAGPv9qLycyTftRNvfixT/NZ/4bARbqp/K/K/ZwHuD5iXz4cpdqFKro0b/F
+      iy2s3sVT0agCcDc9gdjYVMCDfON5Vu47TnZJxTba/BRiwmbwzMoVeMQtIfJ4NhWbaMlPiSFs
+      ho7Vu5cyyKlCBdITYjGVyMd4fiX7LD7+GVau8CBuSSTHK3eClJgwZuhWs3vpIJx4hOEK0bOn
+      s+aM9tGfgDaTE9HvM+7Av3n/H2uY0L6KP2HWD6yc+iExaRX3U3LnGgmb5vJT4iw2r5+NT6Ul
+      nt85FRtrWkrVD6xRAB78Lbrg+boIwFN2kyPf3gRUePoPZnC/fnRX3eBAbDQJaVogjz3vzzE1
+      Vbni128kgwd3R3XjALHRCZiaxLH90DwGTbDwl7t5BFMJT/wHD6Zfv0cfv4cHJfzoN3Iwg7ur
+      uHEgluiENEwltnNo3iAqltBwdPmb0uBXPjeAGbNf548Bz6FLTeTQlq3sSs6mJO9nVr65Eo+9
+      HxFoaY3yVBwxqPD0H8GIIUPo6Krlxonv2P1dMtklUHJ+E++t7s7ejwKtXOZsPBppAJzoG7KU
+      sJAAvJs++BWDxvdi1fC/sEcDOPUlZGkYIQHePGgSxPjACMb9+V/cBE5fSIUJgRZKWHh8r1UM
+      /8seTCVCWBoWQoB30wf/0UHjCYwYx5//dRM4zaMlDL9uYEVcHgDK5+cSvXk60pO82yv4vvgy
+      o76exfT15ynJ+5Yvtk1m7+zO5vvYZSqRa96kj/tDc6WgMUz50xbemLKW8yWQ9+3X/F9oIJNb
+      Ves/ttFppLdCeNB/9MAKgx8A+1Z4eJQ36c/ogQ8P3rImfi/Qq2y7xGCoooSFx7fy4EGJ0Qx8
+      ePCbWuD3glSBiiXu8cPOvZiGf0/e/eyhwS9pQudpf+P1dqavMnZ+y6+W+tjxhYqDv7wH7afz
+      2bs9y746TcLxPEt7aPQaaQAaqouknCw7X+g7kiBLz8r2Powc3cG0rTnJmSvWV2oVNJK+Zdun
+      L6Rav4NGQgSgPsm7xhWNadPDtxtVnTe271h+deky/8msQa0WLSm/O6FEp6OKY12jJgJQn9y9
+      S9n4x6nZUzwtvXadG0+vWr0iAiBAR2/+YOs+2IgIQH3yB286lm2mXrpc5bQk71ZO2ZYH7tbf
+      rAP/uUp62eZTPdrUMyIA9crz+JWfmf58gmSLCdCQePQX06ayF90trIJW5dKBbzGd+ioZ2K+H
+      9TtoJEQA6pUWDBhStjyp2UPE1itmjwKao//Dup9M28qBgfS28mqO4coWVkRlmL5weolRgY30
+      clA1iADUM60mvMnksuWf1PXTmb3hJDn6sh8airh6aDlv/C3OdK1A+Txvv/Xflq/ipvzArpPp
+      5OZq0KNHk5vOsQ3v8nLZRTBQ0vetEPzlO/4b65XgBsy+N+/9Yy7npqzlfImWM5vmELzJXMMW
+      BCxYzOSqzl6vx/HZnDg+M/tDJc+99Hf+PkGml4DLiCNAPWTffjqb937GhE4qsz9XPjeAuZu2
+      s2ZCewvPYEq8J68hauUU/D0r70PZvBsTVu5i70dmbsSTmWfu379/39adECwxUHTzIqfOZ5Ov
+      1aJSqXD28sevoxPWvCpAr8lFk3ONVN1zdGnjirPLo7dnyJcIgCBrYgokyJoIgCBrIgCCrIkA
+      CLImAiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLIm
+      AiDImgiAIGsiAIKsiQAIsiYCIMiaCIAgayIAgqyJAAiyJgIgyJoIgCBrIgCCrIkACLImAiDI
+      mgiAIGsiAIKsNarPSSgpKeHQoUMkJSUxdOhQhg4dausuVVBQUMD27dspKChg2rRptG3bttb7
+      LCoq4uDBg8TExHD16lWKi4sBUCqVeHp6Mm7cOMaMGUPz5s1rXctoNHL69Gmio6M5efIk9+7d
+      q1Br8uTJBAcH07Rp01rXeloaxQdkGI1G4uPjWbduHVlZWQCEhoYSGhpq456Z3Llzh6ioKHbu
+      3IlOp0OtVrN27Vr8/PxqvE+dTsfWrVvZunUrOp2uyraOjo7MmjWLqVOnolDU7KCflZXFRx99
+      xJkzZ6ps17x5c+bPn09wcHCNaz1NDfoIYDQaOXHiBGvWrOHy5cu27k4lOp2OnTt3EhUVxZ07
+      d+psv7dv3yYsLIzk5GTpe66urvj6+tKsWTPANGB/++03iouL0el0fPXVV1y+fJkPPvgAR0dH
+      q+qdO3eOsLAwcnJMH85tZ2dHhw4d6NjR9LHeBQUFJCcnU1xczJ07d1i2bBlZWVnMnDmz3oeg
+      QQbAaDSSmprK8uXLuXTpkq27U0lJSQlxcXFERETU6cAH0Gg0LFiwgNOnTwPQvn17wsPD6dmz
+      Z6XBptPp2L17Nxs2bECn07Fv3z4AFi1aRJMm1fuUsczMTBYtWiQN/h49erB8+XJat25dqdaW
+      LVvYsmULer2eqKgoPD09CQ4Oru2v/ETV73iacfnyZebNm8f06dOlwW9nZ8fw4cNZsWIFarXF
+      T8194oxGI99//z0TJkzgk08+kQZ/8+bNmTt3LtOmTav1/jdv3iwN/mHDhhEVFUWvXr3MPtM6
+      OjoydepUIiIicHIyfR5kfHw88fHx1aqn1+tZv349mZmZUr21a9dWGvzltWbPni2FS6/Xs2bN
+      mnr5BPWwBhOAe/fusXjxYl577TWSkpIwGo0oFAoCAwPZvXs3n376KR4eHjbr36VLl3j11Vf5
+      4IMPpPOQ8rl3XFwc06dPt3rqYa7Gd999B4Cvry+LFi2q1gln7969WbBggTQwv/76a3Jzcx/7
+      uFOnTnHs2DEAvLy8CAsLe2y9ESNGMHXqVMA0NdqxYwdGo/GxtWylQQXgl19+obS0FIVCQa9e
+      vdi2bRtffvkl7dq1s3X3yMjIkM5DHB0deeWVV9i/fz+zZ8+us1WR77//Ho1Gg729PSEhIdKz
+      enUMHz6cYcOGSX1NTEyssr3BYGDXrl1otVrs7e2ZOXMmbm5uj62jUCiYNGkSXl5eACQkJNTr
+      o0CDCUC5zp07ExkZSWRkJJ07d7Z1dyqws7Nj9OjR7N27l7CwsDpZeixXWFjIzz//DEDHjh15
+      4YUXrHq8vb0948aNQ6VSYTQaOXDggLRkak5WVhZnz56V6gUGBla7lpubG2PHjgVM5ywnTpyw
+      qq9PU4MJgFqt5osvvmDbtm0W57y21LVrV2JjY1myZAnu7u51vv+cnBzpRLRr165WPfuX8/Hx
+      wcfHB4DU1FQyMjIstk1OTiY/Px+AQYMGWV0vICCAZ599FoCkpKQqw2ZL9WsUVUGtVuPj41Pv
+      Bn45T09PsyeHdUWr1WIwGABqHDCVSkXv3r0B0xGlqqXjc+fOAdC0aVP8/f2trtWuXTu6dOkC
+      wLVr18jLy6tBj5+8+jmahEpKSkrq5GTSx8cHe3vT6veFCxfMtikqKuLatWsAODs71yjYDg4O
+      0nWCu3fvSkev+kYEoIFQKpV1cvRr166dNJ3JyMiQjioPe3jAuru7SxfXrFU+3SoqKiI7O7uG
+      PX6yRAAaCJVKJT1zp6en1/ho0KxZM2lAFxYWmp2b63Q66fYKNze3Gq9iubq64uDgAFDl+YYt
+      iQA0EK1bt5aWe8+ePStdnLKWg4ODdHJqKQC3b9+Wvl+bJWZHR0cptHfv3q3xfp4kEYAGQq1W
+      S0uft27dIiYmptbnBDqdzuwU6GHlA7gmHj5qiXMAodbmzZvHsmXLaNKkCdHR0fTv35+PP/74
+      sYPr1q1bfPPNN7z00ksMHjxYWt+3JCcnR7rVuTaeffZZaQpUXzXIm+HkbMSIEdy8eZONGzdS
+      WlrKvn37OHDgAG3atKFbt27SFdjMzEyysrJIS0uzejA7OTnh4OBQb9fu65IIQAOjUCgICQmh
+      W7durFq1iqysLIxGI9evX+f69esWH+fg4MCIESOYPHkyK1eu5OzZs7Rs2RKVSlWpbfncvbYB
+      yM7OrpMjyZMkAtAAld8EGBMTw5EjR9i6dStpaWmUlJRUaNOiRQt69uzJyJEjCQgIQKlUUlhY
+      KK3wKJVK7OzsqqxVV3P39u3b18l+6poIQAOmVCoJCgoiKCgIgOLiYgoLC6ucexcWFkpXZS0t
+      cbq5uaFWq7l3716tVm9yc3PRarVA7U6mnyRxEtyIODg44O7uXuWJZ0ZGBhqNBsDizYRqtVpa
+      Kv39999rPI3Jzs6WVqrqwx275ogAyMyFCxcwGAw4ODjg6+trto1araZVq1aAKQCFhYU1rgWm
+      FwTZ8rUaVREBkBGtVsuvv/4KQKtWrfD29jbbzt7eXjo65Ofnc+XKFatrPXyznYuLiwiAYHsX
+      LlyQnpV79uxJixYtLLb18/PD3t4eg8FAQkKC1bXS09Olq9Vdu3bF2dm5Rn1+0kQAZMJgMBAb
+      G4tWq0WlUjFq1Kgqb67r0qWLdBdocnIyt27dqnYto9HIwYMH0Wq1KBQK+vfvX29vY6+fvRLq
+      XGJiIj/++CNgenYvv1PTkpYtWzJkyBDAdOIcGxtb7Vrp6ekcPnwYML1OIiAgoGadfgpEAGQg
+      MzOT1atXo9frUavVzJw50+wFsEeNHTtWeh3wjh07pHejqIperycyMpKCggLAdOW6ZcuWtfsF
+      niARADPi4+Pp06eP9G/jxo227pIkJSWFo0ePVvtGuDNnzhAaGkpmZiYKhYIpU6bQo0ePaj3W
+      y8uLiRMnolAo0Gg0LFmyRHqhjDl6vZ7Vq1dz/PhxwLTMOmnSpGrVspX6eXXiETqdjsTExMe+
+      BWBmZqZ0d2NaWpr0RlDmODs74+/vXycXaG7evMmpU6ce2y4tLQ0wzceTkpKqvKW5U6dOdOrU
+      qdL3c3JyCA8Px8XFhfHjxxMcHEzbtm0rzLGNRiM3btxg8+bN7N+/n9LSUsD0bDxjxgyr5uNT
+      pkwhJSWFxMREMjMzCQkJYc6cOYwZM0a6iGbujcqcnJwICwvDxcWl2rVsoUG8N2hOTg4zZsyo
+      01tqu3fvzrp168y+kVZ8fDzh4eHS1497n9FH29cFSzXN1VIoFDg7O0thfvQ+fzs7OyZOnMg7
+      77xT7XeEe5hGo2HhwoXSEmr5Pl1cXFAoFJXqOTk5sWzZMgYMGGB1radNTIEamMDAQN5+++0K
+      82qj0Uh+fr70zhEPD8YOHToQERHB/PnzazT4wTSgIyIiCA0Nld7cq7S0lNzc3Ar1FAoFvr6+
+      bNmypUEMfmggRwChsvJpzrFjx0hJSeHixYvo9XrA9OqxgIAAhg8fTps2bep0CbKoqIjDhw9z
+      5MgRLl68iMFgwNXVlb59+zJmzBi8vLzq7ZKnOSIAgqw1nKgKwhMgAiDImgiAIGsiAIKsiQAI
+      siYCIMiaCIAgayIAgqz9PyEshptKt68DAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Perzzi per tipo immobile' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Prezzi Immobiliare Torino' width='192'>
+      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
+      GUCLC83/A+RaLDsyKmt0AAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='Prezzi per metratura' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Prezzo per quartiere' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
