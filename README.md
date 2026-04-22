@@ -166,27 +166,31 @@ This is the final cleaned file used to create the Dashboards in Tableau [Final C
 
 ---
 
-### Market Overview by District
+# Market Overview by District
 
 Comprehensive analysis of the Turin housing market across all neighborhoods.
+<br><br>
 
-![Market Overview Dashboard](https://via.placeholder.com/1000x600?text=Market+Overview+Dashboard)
+<p align="center">
+  <img src="https://i.imgur.com/2mo3nMQ.png" width="80%"/>
+</p>
 
+<br><br>
 #### Analysis Metrics:
 
-**Property Inventory**
+- **Property Inventory**
 Number of listings
 
-**Price per Square Meter**
+- **Price per Square Meter**
 Cost efficiency comparison
 
-**Price by Property Type**
+- **Price by Property Type**
 Pricing segmentation for apartments, bilocales, and other property categories
 
-**Average Property Size**
+- **Average Property Size**
 Mean square meters by district for comparative analysis
 
-**Average Price by District**
+- **Average Price by District**
 Overall pricing rankings and market positioning
 
 #### Dashboard Features:
@@ -202,11 +206,17 @@ Overall pricing rankings and market positioning
 
 ---
 
-### Student Housing Investment Opportunities
+# Student Housing Investment Opportunities
 
 Specialized analysis for real estate investors targeting the student rental market in Turin.
 
-![Student Housing Investment Dashboard](https://via.placeholder.com/1000x600?text=Student+Housing+Investment+Dashboard)
+<br><br>
+
+<p align="center">
+  <img src="https://i.imgur.com/82tpJrG.png" width="80%"/>
+</p>
+
+<br><br>
 
 #### Investment Scoring Framework:
 
