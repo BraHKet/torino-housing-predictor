@@ -165,9 +165,7 @@ This is the final cleaned file used to create the Dashboards in Tableau [Final C
 
 ---
 
-## Interactive Dashboards
-
----
+# Interactive Dashboards
 
 # Market Overview by District
 
@@ -205,7 +203,7 @@ Overall pricing rankings and market positioning
 
 ---
 
-# Student Housing Investment Opportunities
+## Student Housing Investment Opportunities
 
 Specialized analysis for real estate investors targeting the student rental market in Turin.
 
@@ -251,12 +249,6 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 - **ROI Projections** - Estimated returns
 - **Location Analysis** - University proximity and transportation accessibility
 - **House-by-House Opportunity Assessment** - Detailed individual property evaluation
-
-#### Ideal For:
-
-- Real estate investors exploring Turin's student housing sector
-- Property managers seeking high-yield rental opportunities
-- Student housing market specialists and institutional investors
 
 [Access the Investment Dashboard](https://public.tableau.com/views/IndagineinvestimentiimmobiliariTorino/DashboardInvestimenti?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
