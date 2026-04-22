@@ -261,104 +261,13 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 
 [Access the Investment Dashboard](https://public.tableau.com/views/IndagineinvestimentiimmobiliariTorino/DashboardInvestimenti?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
----
-
 ## Video Tutorials
 
 ### Student Housing Investment Dashboard Tutorial
 
-[![Student Housing Investment Dashboard](https://img.youtube.com/vi/YOUR_YOUTUBE_VIDEO_ID/maxresdefault.jpg)](https://www.youtube.com/watch?v=YOUR_YOUTUBE_VIDEO_ID)
+[![Student Housing Investment Tutorial](https://www.youtube.com/watch?v=qeyRn1bU6_U&t=99s)
 
-**Duration:** XX minutes
-
-**Tutorial Contents:**
-
-- Dashboard interface navigation and layout overview
-- Interactive filtering by investment criteria and preferences
-- Interpreting the Investment Score methodology
-- Analyzing ROI projections and expected returns
-- Identifying top investment opportunities in your target areas
-- Comparing different districts and neighborhoods
-- Exporting analysis data for further research and presentations
-
-[Watch on YouTube](https://www.youtube.com/watch?v=YOUR_YOUTUBE_VIDEO_ID)
-
----
-
-## Dashboard Features
-
-### General Capabilities
-
-All dashboards include the following interactive features:
-
-**Filtering & Customization**
-- Filter by district, price range, property type, size
-- Dynamic updates reflecting selected criteria
-- Multiple simultaneous filter combinations
-
-**Data Visualization**
-- Interactive charts and graphs
-- Heat maps for geographic analysis
-- Comparative views and trend visualization
-- Exportable visualizations for presentations
-
-**Data Export**
-- Download filtered data to CSV or Excel
-- Export charts and visualizations
-- Generate custom reports for stakeholders
-
-**Navigation & Interaction**
-- Drill-down capabilities for detailed analysis
-- Hover tooltips with detailed information
-- Cross-filtering between visualization elements
-- Responsive design for desktop and tablet viewing
-
----
-
-## How to Use the Dashboards
-
-### Market Overview Dashboard
-
-1. Access the dashboard using the provided link
-2. Browse all neighborhoods using the interactive district selector
-3. Compare property types and pricing across areas
-4. Analyze average metrics by neighborhood
-5. Identify pricing patterns and market leaders
-6. Export insights for market research reports
-
-**Use Cases:**
-- Identify neighborhoods with best price-per-square-meter
-- Compare average prices across districts
-- Understand property type distribution
-- Support market entry decisions with data
-
-### Investment Opportunity Dashboard
-
-1. Open the specialized investment analysis dashboard
-2. Define your investment criteria using available filters:
-   - Budget range and price limits
-   - Target location/district preferences
-   - Expected ROI threshold
-3. Review the Investment Score for each property
-4. Analyze gross ROI projections and market opportunity
-5. Consult the video tutorial for detailed workflow guidance
-6. Export property lists and analysis for due diligence
-
-**Use Cases:**
-- Identify best value properties in target locations
-- Compare investment opportunities across districts
-- Assess ROI potential for student housing
-- Screen properties based on multiple criteria
-- Build investment opportunity shortlists
-
-### General Navigation Tips
-
-- Use filters to customize views based on your specific criteria
-- Hover over data points for detailed information and tooltips
-- Leverage drill-down functionality to explore neighborhood details
-- Share dashboards with stakeholders for collaborative analysis
-- Export insights and reports for external presentations and meetings
-- Refresh dashboards periodically to see updated market data
+**Duration:** 4,41 minutes
 
 ---
 
@@ -375,7 +284,6 @@ All dashboards include the following interactive features:
 
 **Data Storage:**
 - Excel spreadsheets for initial data management
-- SQL databases for structured data storage and queries
 
 **Data Visualization:**
 - Tableau for interactive dashboards and business intelligence
@@ -385,12 +293,13 @@ All dashboards include the following interactive features:
 ## Next Steps
 
 **Short Term:**
+- Careful calibration of score weights
 - Gather user feedback on dashboard usability
 - Refine filtering and visualization options
 - Optimize dashboard performance
 
 **Medium Term:**
-- Implement real-time data updates from Immobiliare.it
+- Implement real-time data updates
 - Expand analysis to include rental market data
 - Add historical price trend analysis
 - Develop automated alert system for investment opportunities
