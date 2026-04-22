@@ -2,7 +2,7 @@
 <br>
 
 <p align="center">
-  <img src="https://i.imgur.com/DaUNWta.png" width="20%"/>
+  <img src="https://i.imgur.com/DaUNWta.png" width="25%"/>
 </p>
 <br><br>
 Real estate market intelligence and investment opportunity analysis for Turin's housing market.
@@ -201,10 +201,6 @@ Overall pricing rankings and market positioning
 - Interactive filtering by district, price range, and property type
 - Trend identification across districts
 
-#### Ideal For:
-
-- General market research and analysis
-
 [Tableau Dashboard Link](https://public.tableau.com/views/PrezziimmobiliareTorino/PrezziImmobiliareTorino?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
@@ -274,8 +270,6 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
   </a>
 </p>
 
-**Duration:** 4,41 minutes
-
 ---
 
 ## Technologies Used
@@ -316,21 +310,5 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 - Integrate additional data sources (census, transportation, education)
 - Develop comprehensive market comparison tools
 - Build investor community platform
+  
 
----
-
-## Documentation
-
-**Project Repository:**
-[github.com/BraHKet/torino-housing-predictor](https://github.com/BraHKet/torino-housing-predictor)
-
-**Data Analysis Notebook:**
-[View the complete exploratory analysis notebook](https://github.com/BraHKet/torino-housing-predictor/blob/main/notebooks/Main_Notebook_Immobiliare.ipynb)
-
----
-
-This project demonstrates a complete end-to-end data analysis workflow, from raw data acquisition through exploratory analysis and interactive visualization. The Tableau dashboards provide actionable market intelligence for real estate professionals, investors, and anyone seeking to understand Turin's dynamic housing market.
-
-The focus on interactive exploration and investment opportunity assessment enables stakeholders to make data-driven decisions with confidence.
-
-**Created by:** Lorenzo Rizzo
