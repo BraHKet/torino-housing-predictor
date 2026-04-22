@@ -102,52 +102,64 @@ The cleaned dataset serves as the foundation for comprehensive exploratory analy
 
 Multiple interactive dashboards were developed using Tableau to present findings in an accessible and actionable format for different stakeholder needs.
 
-**Dashboard Categories:**
-- Market overview and comparative district analysis
-- Investment opportunity assessment
-- Price trend analysis by location
-- Property characteristic impact assessment
-
-All dashboards feature interactive filters, drill-down capabilities, and export functionality for stakeholder reporting and further analysis.
-
 ---
 
 ## Data Structure
 
+This is the final cleaned file used to create the Dashboards in Tableau [Final Clean CSV for Tableau](https://github.com/BraHKet/torino-housing-predictor/blob/main/notebooks/data/TABLEAU/file_TABLEAU_V6(quartieri_standard).csv)
+<br><br>
+
 | Column Name | Data Type | Description |
 |-------------|-----------|-------------|
-| `data` | Float | Property price in EUR |
-| `Property_1_Size` | String | Property size in square meters |
-| `rooms` | String | Number of rooms (locali) |
-| `bathrooms` | String | Number of bathrooms |
-| `location` | String | Full location information |
-| `quartiere` | String | District/neighborhood name |
-| `elevator` | String | Elevator availability |
-| `balcony` | String | Balcony presence |
 | `energy_class` | String | Energy efficiency rating (A-G) |
-| `energy_consumption` | String | Annual energy consumption data |
 | `tipo_immobile` | String | Property type classification |
 | `via` | String | Street name |
 | `civico` | String | Street number |
-| `item_page_link` | String | Direct property listing URL |
-| `last_update` | String | Last listing update timestamp |
-
----
-
-## Key Findings
-
-**Dataset Overview:**
-- Total unique property listings: 1,388
-- Geographic scope: Turin (Torino) metropolitan area
-- Price range: Varies significantly across districts and property types
-- Data quality: 100% unique records with minimal missing values after recovery
-
-**Market Insights:**
-- Strong price variation correlates with location and district
-- Property size shows consistent relationship with market pricing
-- Energy efficiency class distribution indicates housing stock age and condition
-- Student housing market presents distinct investment opportunities
-- District-level market dynamics reveal investment hotspots and emerging areas
+| `quartiere` | String | District/neighborhood name (raw) |
+| `citta` | String | City name |
+| `lat` | Float | Latitude coordinate |
+| `lon` | Float | Longitude coordinate |
+| `dist_metro_m` | Float | Distance to nearest metro station (meters) |
+| `minuti_metro` | Float | Walking time to nearest metro (minutes) |
+| `dist_tram_m` | Float | Distance to nearest tram stop (meters) |
+| `minuti_tram` | Float | Walking time to nearest tram (minutes) |
+| `dist_bus_m` | Float | Distance to nearest bus stop (meters) |
+| `minuti_bus` | Float | Walking time to nearest bus stop (minutes) |
+| `distanza_ospedale_m` | Float | Distance to nearest hospital (meters) |
+| `ospedale_piu_vicino` | String | Nearest hospital name |
+| `tempo_piedi_ospedale_min` | Float | Walking time to nearest hospital (minutes) |
+| `distanza_universita_m` | Float | Distance to nearest university (meters) |
+| `universita_piu_vicino` | String | Nearest university name |
+| `tempo_piedi_universita_min` | Float | Walking time to nearest university (minutes) |
+| `distanza_stazione_m` | Float | Distance to nearest train station (meters) |
+| `stazione_piu_vicino` | String | Nearest train station name |
+| `tempo_piedi_stazione_min` | Float | Walking time to nearest train station (minutes) |
+| `distanza_asilo_m` | Float | Distance to nearest nursery school (meters) |
+| `asilo_piu_vicino` | String | Nearest nursery school name |
+| `tempo_piedi_asilo_min` | Float | Walking time to nearest nursery school (minutes) |
+| `distanza_scuola_elementare_m` | Float | Distance to nearest primary school (meters) |
+| `scuola_elementare_piu_vicino` | String | Nearest primary school name |
+| `tempo_piedi_scuola_elementare_min` | Float | Walking time to nearest primary school (minutes) |
+| `distanza_scuola_media_m` | Float | Distance to nearest middle school (meters) |
+| `scuola_media_piu_vicino` | String | Nearest middle school name |
+| `tempo_piedi_scuola_media_min` | Float | Walking time to nearest middle school (minutes) |
+| `distanza_scuola_superiore_m` | Float | Distance to nearest high school (meters) |
+| `scuola_superiore_piu_vicino` | String | Nearest high school name |
+| `tempo_piedi_scuola_superiore_min` | Float | Walking time to nearest high school (minutes) |
+| `data_aggiornamento` | String | Last listing update timestamp |
+| `numero_locali` | Integer | Number of rooms |
+| `size_m2` | Float | Property size in square meters |
+| `Bathrooms` | Integer | Number of bathrooms |
+| `floor` | String | Floor number |
+| `price` | Float | Property price in EUR |
+| `Balcony` | String | Balcony presence |
+| `coefficient` | Float | Price adjustment coefficient |
+| `elevator_final` | String | Elevator availability |
+| `esposizione` | String | Property sun exposure |
+| `infissi_vetro` | String | Window glass type |
+| `infissi_materiale` | String | Window frame material |
+| `luxury_score` | Float | Computed luxury score |
+| `quartiere_pulito` | String | Standardised district/neighborhood name |
 
 ---
 
