@@ -227,17 +227,17 @@ The dashboard combines two key metrics to identify the best investment opportuni
 A comprehensive metric evaluating multiple critical factors:
 
 - **Property Price** - Acquisition cost and market value positioning
-- **Location Quality** - Neighborhood desirability and urban development
+- **Locals** - Number of rentable rooms in the property
 - **Public Transportation** - Proximity to transit hubs and accessibility
 - **University Proximity** - Distance to major educational institutions
-- **Neighborhood Quality** - Overall area amenities, safety, and infrastructure
+- **Property Quality** - Overall quality of property
 
 **Gross ROI**
 
 Expected rental yield calculation based on:
 
 - Property acquisition cost
-- Average student rental rates in the district
+- Average student rental rates in Turin 
 - Market demand and expected occupancy rates
 - Operating and maintenance cost estimations
 
@@ -249,20 +249,17 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 
 - **Comprehensive Property Ranking** - Individual assessment of every listing
 - **District Heat Maps** - Identify high-opportunity neighborhoods at a glance
-- **ROI Projections** - Estimated returns based on historical market data
-- **Risk Assessment** - Market volatility and demand stability analysis
+- **ROI Projections** - Estimated returns
 - **Location Analysis** - University proximity and transportation accessibility
-- **Comparative Filtering** - Customize analysis by budget, location, and ROI targets
 - **House-by-House Opportunity Assessment** - Detailed individual property evaluation
 
 #### Ideal For:
 
 - Real estate investors exploring Turin's student housing sector
 - Property managers seeking high-yield rental opportunities
-- Portfolio diversification and investment planning
 - Student housing market specialists and institutional investors
 
-[Access the Investment Dashboard](INSERT_DASHBOARD_2_LINK)
+[Access the Investment Dashboard](https://public.tableau.com/views/IndagineinvestimentiimmobiliariTorino/DashboardInvestimenti?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
