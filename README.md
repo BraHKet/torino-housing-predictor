@@ -14,15 +14,14 @@ Real estate market intelligence and investment opportunity analysis for Turin's 
 2. [Research Question](#research-question)
 3. [Project Workflow](#project-workflow)
 4. [Data Structure](#data-structure)
-5. [Key Findings](#key-findings)
-6. [Interactive Dashboards](#interactive-dashboards)
+5. [Interactive Dashboards](#interactive-dashboards)
    - [Market Overview by District](#market-overview-by-district)
    - [Student Housing Investment Opportunities](#student-housing-investment-opportunities)
-7. [Video Tutorials](#video-tutorials)
-8. [Dashboard Features](#dashboard-features)
-9. [How to Use the Dashboards](#how-to-use-the-dashboards)
-10. [Technologies Used](#technologies-used)
-11. [Next Steps](#next-steps)
+6. [Video Tutorials](#video-tutorials)
+7. [Dashboard Features](#dashboard-features)
+8. [How to Use the Dashboards](#how-to-use-the-dashboards)
+9. [Technologies Used](#technologies-used)
+10. [Next Steps](#next-steps)
 
 ---
 
@@ -176,10 +175,10 @@ Comprehensive analysis of the Turin housing market across all neighborhoods.
 #### Analysis Metrics:
 
 **Property Inventory**
-Number of listings and market saturation by district
+Number of listings
 
 **Price per Square Meter**
-Cost efficiency comparison across neighborhoods
+Cost efficiency comparison
 
 **Price by Property Type**
 Pricing segmentation for apartments, bilocales, and other property categories
@@ -193,19 +192,13 @@ Overall pricing rankings and market positioning
 #### Dashboard Features:
 
 - Interactive filtering by district, price range, and property type
-- Comparative neighborhood analysis with side-by-side metrics
-- Market positioning and competitive landscape visualization
 - Trend identification across districts
-- Exportable reports for stakeholder presentations
 
 #### Ideal For:
 
-- Real estate professionals seeking market intelligence
-- Property buyers comparing neighborhoods
 - General market research and analysis
-- Investment scouts identifying market trends
 
-[Access the Market Overview Dashboard](INSERT_DASHBOARD_1_LINK)
+[Tableau Dashboard Link](https://public.tableau.com/views/PrezziimmobiliareTorino/PrezziImmobiliareTorino?:language=it-IT&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ---
 
