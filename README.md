@@ -1,7 +1,10 @@
-# Turin Housing Predictor
+<h1 align="center">Turin Housing Investments</h1>
+<br>
 
-![Turin Housing](https://via.placeholder.com/1200x300?text=Turin+Housing+Predictor)
-
+<p align="center">
+  <img src="https://i.imgur.com/DaUNWta.png" width="20%"/>
+</p>
+<br><br>
 Real estate market intelligence and investment opportunity analysis for Turin's housing market.
 
 **Created by:** Lorenzo Rizzo
@@ -265,7 +268,11 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 
 ### Student Housing Investment Dashboard Tutorial
 
-![Student Housing Investment Tutorial](https://www.youtube.com/watch?v=qeyRn1bU6_U&t=99s)
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=qeyRn1bU6_U&t=99s">
+    <img src="https://img.youtube.com/vi/qeyRn1bU6_U/0.jpg" width="70%"/>
+  </a>
+</p>
 
 **Duration:** 4,41 minutes
 
