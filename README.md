@@ -265,7 +265,7 @@ A unified metric combining both Investment Score and Gross ROI to rank propertie
 
 ### Student Housing Investment Dashboard Tutorial
 
-[![Student Housing Investment Tutorial](https://www.youtube.com/watch?v=qeyRn1bU6_U&t=99s)
+![Student Housing Investment Tutorial](https://www.youtube.com/watch?v=qeyRn1bU6_U&t=99s)
 
 **Duration:** 4,41 minutes
 
